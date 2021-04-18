@@ -24,6 +24,8 @@ mongoose.connect(
 app.set("port", process.env.PORT || 3000);
 
 app.set("view engine", "ejs");
+app.set('layout', './layouts/home-layout.ejs')
+router.use('/css', express.static(__dirname + 'public/css'))
 router.use(express.static("public"));
 router.use(layouts);
 
@@ -66,8 +68,7 @@ router.use(expressValidator());
 
 router.get("/", homeController.showIndex);
 
-router.get("/signup", usersController.showSignup);
-router.post("/signingUp", usersController.validate, usersController.signingUp, usersController.redirectView);
+router.post("/signup", usersController.validate, usersController.signingUp, usersController.redirectView);
 
 router.get("/login", usersController.showLogin);
 router.post("/loginuser", usersController.authenticate);

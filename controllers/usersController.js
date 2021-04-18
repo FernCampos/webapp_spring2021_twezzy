@@ -48,10 +48,10 @@ module.exports = {
         res.render("users/index");
     },
     showSignup: (req, res) => {
-        res.render("signup");
+        res.render("signup", {layout: '/layouts/index-layout'});
     },
     showLogin: (req, res) => {
-        res.render("login")
+        res.render("login", {layout: '/layouts/index-layout'})
     },
     authenticate: passport.authenticate("local", {
         failureRedirect: "/login",
@@ -184,7 +184,7 @@ module.exports = {
         let userId = req.params.id;
         User.findById(userId)
             .then(user => {
-                res.render("users/edit", { user: user });
+                res.render("users/edit");
             })
             .catch(error => {
                 console.log(`Error fetching user by ID: ${error.message}`);

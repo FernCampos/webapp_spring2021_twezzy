@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+  <script src="https://kit.fontawesome.com/b71a0ba986.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/home.css">
+  <title>Tweezy</title>
+</head>
+
+<body>
+  <div class="topbar">
+    <div class="columns is-vcentered is-centered">
+      <div class="column is-3">
+        <a href="/feed"><img src="/assets/logo.svg" alt="Logo" height="40px" width="175"></a>
+      </div>
+      <div class="column is-6">
+        <div class="field">
+          <p class="control has-icons-left">
+            <input class="input is-rounded" type="text" placeholder="Search">
+            <span class="icon is-small is-left">
+              <i class="fas fa-search"></i>
+            </span>
+          </p>
+        </div>
+      </div>
+      <div class="column is-3 left-col">
+        <div class="columns">
+          <div class="column is-6"></div>
+          <div class="column is-3">
+            <a href="/users">Profile</a>
+          </div>
+          <div class="column is-3">
+            <a href="/logout">Logout</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="columns is-desktop">
+      <!--Left Colum-->
+      <div class="column">
+        <%- include('../home/user-profile.ejs') %>
+        <%- include('../home/nav.ejs') %>
+      </div>
+      <!--Center Column-->
+      <div class="column is-half">
+        <!--Post Tweet box-->
+
+        <!-- Change "FEED" and "EDIT PROFILE HERE" -->
+       <%- include('../home/feed.ejs') %>
+        
+
+      </div>
+      <!--Right Column-->
+      <div class="column">
+        <%- include('../home/trend.ejs') %>
+        <%- include('../home/follow.ejs') %>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

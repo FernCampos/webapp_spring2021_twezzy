@@ -1,0 +1,63 @@
+<div class="box is-marginless">
+    <div class="media">
+      <div class="media-left">
+        <figure class="image is-48x48">
+          <img src="assets/temp-profile-img.png" alt="Image" class="is-rounded">
+        </figure>
+      </div>
+      <div class="media-content">
+        <form action="tweet" method="post">
+          <input type="hidden" name="action" value="postTweet">
+          <div class="content">
+            <textarea id="tweetBox" class="textarea" name="tweet" placeholder="Hello world" rows="3"></textarea>
+          </div>
+          <input type="submit" class="button is-link is-rounded" value="Tweez">
+        </form>
+      </div>
+    </div>
+  </div>
+  <!--View Tweet-->
+  <div class="box is-marginless">
+    <div class="media">
+      <div class="media-left">
+        <figure class="image is-64x64">
+          <img src="assets/temp-profile-img.png" alt="Image" class="is-rounded">
+        </figure>
+      </div>
+      <div class="media-content">
+        <div class="content">
+          <p>
+            <strong>John Doe</strong> <small>@johndoe</small> &middot; <small>2h</small>
+            <br>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique quas doloremque iure quam animi
+            eaque doloribus impedit, sit officiis sequi eos sint excepturi, corporis repudiandae dolorem,
+            perferendis omnis tenetur asperiores?
+          </p>
+        </div>
+        <nav class="level is-mobile">
+          <div class="level-left">
+            <a class="level-item" aria-label="reply">
+              <span class="icon is-small">
+                <i class="fas fa-reply" aria-hidden="true"></i>
+              </span>
+            </a>
+            <a class="level-item" aria-label="retweet">
+              <span class="icon is-small">
+                <i class="fas fa-retweet" aria-hidden="true"></i>
+              </span>
+            </a>
+            <a class="level-item" aria-label="like">
+              <span class="icon is-small">
+                <i class="fas fa-heart" aria-hidden="true"></i>
+              </span>
+            </a>
+            <a class="level-item" aria-label="delete" href="tweet?action=deleteTweet&tweetID=${tweet.tweetID}">
+              <span class="icon is-small">
+                <i class="fas fa-trash-alt" aria-hidden="true"></i>
+              </span>
+            </a>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>

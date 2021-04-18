@@ -1,0 +1,87 @@
+.login-form {
+  width: 450px;
+  height: 450px;
+  margin: auto;
+  background: white;
+  -webkit-box-shadow: 15px 15px 10px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 15px 15px 10px 0 rgba(0, 0, 0, 0.2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.login-form form {
+  width: 75%;
+}
+
+.login-form form .form-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 3em;
+  color: var(--dark-gray);
+}
+
+.login-form form .form-item {
+  margin-bottom: 1em;
+  width: 100%;
+  outline: none;
+}
+
+.login-form form .form-item .input-label {
+  display: block;
+  text-align: left;
+  color: var(--dark-gray);
+  font-size: 0.8em;
+}
+
+.login-form form .form-item input {
+  width: 100%;
+  border: 1px solid var(--primary-color);
+  border-radius: 0.5em;
+  color: var(--dark-gray);
+  padding: 0.3em;
+  font-size: 1.2em;
+}
+
+.login-form form .form-item input:focus {
+  border: 2px solid var(--primary-color);
+  outline: none;
+}
+
+.login-form .btn-submit {
+  background: -webkit-gradient(linear, left top, right top, from(#2786CF), to(#27BFCF));
+  background: linear-gradient(to right, #2786CF, #27BFCF);
+  color: white;
+  font-size: 1.3em;
+  border: none;
+  border-radius: 5em;
+  padding: 0.4em;
+  width: 100%;
+  outline: none;
+}
+
+.login-form .btn-submit:hover {
+  font-weight: bold;
+}
+
+.login-form h3 {
+  color: var(--primary-color);
+  font-weight: bold;
+  font-size: 2em;
+  padding-bottom: 0.5em;
+}
+/*# sourceMappingURL=login.css.map */
