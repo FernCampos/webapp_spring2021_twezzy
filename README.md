@@ -37,3 +37,7 @@ Future Plans
 
 In the future, we would like to add functionality for users to post images and videos to express themselves even more. Other functionalities include adding more security
 to the web app and mongoDB database so that users can rely on the web app to secure their information from attackers. Lastly, adding functionality for promotions and notifications to be sent to a valid email address would be great so that users can get notifications outside of the web application. 
+
+Demo Video
+
+https://ucdenver.techsmithrelay.com/h8Jc
